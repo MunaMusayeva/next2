@@ -13,7 +13,7 @@ const products = [
 const Ecommerce = () => {
   return (
     <div className='w-full p-5 grid grid-cols-3 gap-5'>
-        {products.map(item=> <ProductCard item={item}/>)}
+        {products.map((item,index)=> <ProductCard key={index} item={item}/>)}
     </div>
   )
 }
